@@ -7,3 +7,6 @@ def empinfo(request):
     byname = Employee.objects.filter(ename__icontains='Sh')
 
     return render(request,'app/empdata.html',{'data':edata,'byname':byname})
+
+def hello(request):
+    return render(request,'app/2nd.html')

@@ -5,6 +5,7 @@
     <title></title>
   </head>
   <body><center>
+    {% block content %}
     <h1>*****Employee Data*****</h1>
       <table border = "1" style="width:50%">
         <tr>
@@ -22,7 +23,7 @@
         </tr>
         {% endfor%}
       </table>
-
+      {% endblock%}
       <h2>******By Name Sh******</h2>
       <table border = "1" style="width:50%">
         <tr>

@@ -4,5 +4,6 @@ from .models import Employee
 
 def empinfo(request):
     edata = Employee.objects.all()
+    byname = Employee.objects.filter(ename__icontains='Sh')
 
-    return render(request,'app/empdata.html',{'data':edata})
+    return render(request,'app/empdata.html',{'data':edata,'byname':byname})
